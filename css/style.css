@@ -1,0 +1,344 @@
+body {
+    background-color: #494853;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+/*Automatic color sheme*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+/*Navbar*/
+
+.navbar {
+    background-color: #494853;
+    border: 2px solid #444;
+}
+
+.navbar:hover {
+    transform: scale(1.05);
+    border-color: #777;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ccc;
+    animation: pulse-grow 0.6s infinite;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.navbar-logo {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*Hero style*/
+.hero {
+    
+        background-image: url('noirLaptop.webp'); /* Cseréld ki az útvonalat a képhez */
+        background-size: cover; /* A kép kitölti a teljes szekciót */
+        background-position: center; /* A kép középre van igazítva */
+        padding: 60px 0; /* Szükség szerint beállíthatod a szekció belső margóját */
+   
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/*Project section*/
+.project-card-container .card {
+    height: 100%; /* Minden kártya ugyanakkora magasságú lesz */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card-container .card-body {
+    flex-grow: 1; /* Kihasználja a rendelkezésre álló helyet */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card-container .card-title,
+.project-card-container .card-text {
+    text-align: center; /* Középre igazított szöveg */
+}
+
+.project-card-container .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Fix magasságú képek */
+}
+
+.project-card {
+    background-color: #494853;
+    padding: 20px;
+    border: 2px solid #555;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    color: #888;
+}
+
+.project-card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+    background-color: #494853;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #494853;
+    border-color: #777;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    color: #ddd;
+}
+
+.button:hover {
+    border-radius: 5px;
+    background: linear-gradient(145deg, #666, #333);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    animation: pulse-grow 0.6s infinite;
+}
+.btn:hover {
+    border-radius: 5px;
+    background: linear-gradient(145deg, #666, #333);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    animation: pulse-grow 0.6s infinite;
+}
+
+@keyframes pulse-grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Increase size */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*Input*/
+
+.input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #494853;
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    transition: .4s;
+  }
+  
+  .input:hover {
+    box-shadow: 0 0 0 .15vw rgba(145, 19, 25, 0.434);
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 0 .15vw rgba(145, 19, 25, 0.434);
+  }
+
+/*Footer*/
+footer {
+    background-color: #494853;
+    color: #888;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+.nav-item:hover {
+    border-radius: 5px;
+    background: linear-gradient(145deg, #666, #333);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    animation: pulse-grow 0.6s infinite;
+}
+
+.nav-item:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+#contact:hover {
+    background-color: #494853;
+    border-color: #777;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Star Rating */
+#star-rating {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#star-rating .star {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+#star-rating .star:hover,
+#star-rating .star.active {
+    color: #f39c12;
+}
+
+/* Review */
+.review {
+    background-color: #494853;
+    border: 2px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar, body.dark-mode .card {
+    background-color: #1c1c1c;
+}
+
+.dark-toggle {
+    position: fixed;
+    left: -200px; /* Kezdéskor el van rejtve a bal oldalon */
+    top: 70%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease-in-out;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #060505, #afa6a6);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-toggle.show {
+    left: 10px; /* Megjelenik a bal oldalon */
+}
+
+/*Scrool UP*/
+
+/* Animáció a jobbról való beúszáshoz */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); /* Kezdő helyzet: a gomb a képernyő jobb oldalán */
+        opacity: 0;  /* Kezdő átlátszóság: 0, tehát láthatatlan */
+    }
+    100% {
+        transform: translateX(0);  /* Végeredmény: a gomb a képernyő bal oldalán */
+        opacity: 1;  /* Végeredmény: teljesen látható */
+    }
+}
+
+/* Alapértelmezett stílus a toTopBtn gombhoz */
+#toTopBtn {
+    position: fixed;
+    bottom: 20px; /* Gomb pozíciója a képernyő alján */
+    right: 20px;  /* Gomb pozíciója a képernyő jobb oldalán */
+    z-index: 1000;  /* A gomb mindig a többi elem előtt jelenjen meg */
+    opacity: 0;   /* Kezdetben rejtett, 0 átlátszóság */
+    animation: slideInRight 1s forwards; /* Alkalmazzuk az animációt, 0.5s időtartammal */
+    transition: opacity 0.3s ease; /* Láthatóság animálása (ha eltűnik) */
+}
+
+/* Az animáció a gomb megjelenésekor indul */
+#toTopBtn.show {
+    opacity: 1;  /* Gomb megjelenítése */
+}
+
+  #toTopBtn:hover {
+    border-radius: 5px;
+    background: linear-gradient(145deg, #060505, #afa6a6);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    animation: pulse-grow 0.6s infinite;
+  }
+
+  #toTopBtn:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.7);
+  }
+
+/*Caroussel*/
+
+#star-rating .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.2s;
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+}
+
+/* Carousel belső stílusok */
+.carousel-inner {
+    min-height: 200px;
+}
+
+.review {
+    background-color: #494853;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
