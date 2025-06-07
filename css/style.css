@@ -46,17 +46,17 @@ body {
 }
 
 .navbar-logo {
-    width: 120px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 120px; 
+    height: auto; 
 }
 
 /*Hero style*/
 .hero {
     
-        background-image: url('noirLaptop.webp'); /* Cseréld ki az útvonalat a képhez */
-        background-size: cover; /* A kép kitölti a teljes szekciót */
-        background-position: center; /* A kép középre van igazítva */
-        padding: 60px 0; /* Szükség szerint beállíthatod a szekció belső margóját */
+        background-image: url('noirLaptop.webp'); 
+        background-size: cover;
+        background-position: center; 
+        padding: 60px 0; 
    
     height: 80vh;
     display: flex;
